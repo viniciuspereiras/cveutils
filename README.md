@@ -64,5 +64,5 @@ MITRE
 - Change to v2 api version
 - Add more features https://nvd.nist.gov/developers/vulnerabilities
 - PEP8
-- Think if has some better way to not do the quest in the moment of object creation
+- Think if has some better way to not do the request in the moment of object creation
 - Implement other api features
