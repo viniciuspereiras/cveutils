@@ -1,4 +1,7 @@
 # cveutils
+[![PyPI](https://img.shields.io/pypi/v/cveutils?style=flat)](https://pypi.python.org/pypi/cveutils/)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
+
 This library provides functionality for fetching and parsing information about Common Vulnerabilities and Exposures (CVE) using the NIST National Vulnerability Database (NVD) RESTful API.
 ## Requirements
 This library requires the requests module and the datetime module.
