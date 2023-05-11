@@ -13,6 +13,9 @@ class CVSSDictionary(dict):
     def __str__(self) -> str:
         return self.baseScore
 
+class CVENotFound(Exception):
+    pass
+
 class CVE:
     """
     A class that represents a CVE
@@ -52,6 +55,8 @@ class CVE:
     def __init__(self, CVEID) -> None:
         self.ID = CVEID
         self.info = self.getCVEInfo()
+        if 'message' in self.info.keys() and 'Unable to find vuln' in self.info['message']:
+            raise CVENotFound('CVE not found')
         self.description = self.info["result"]["CVE_Items"][0]["cve"]["description"]["description_data"][0]["value"]
         self.getCVSS()
         self.published_date = self.publishedDate()
@@ -106,4 +111,6 @@ class CVE:
     
 
 if '__main__' == __name__:
-    pass
+    cve = CVE("CVE-2022-35405")
+
+    print(cve.ID)
