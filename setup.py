@@ -1,18 +1,17 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 import os
-
-# ... other setup code ...
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
-    
+
 setup(
     name='cveutils',
     version='0.6',
     description='This library provides functionality for fetching and parsing information about Common Vulnerabilities and Exposures (CVE) using the NIST National Vulnerability Database (NVD) RESTful API.',
     author='Vinicius Pereira (big0us)',
     author_email='vini@cius.xyz',
-    packages=find_packages(exclude=['tests']),
+    package_dir={'': 'src'},
+    packages=['cveutils'],
     install_requires=[
         'requests',
     ],
