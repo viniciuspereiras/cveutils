@@ -9,8 +9,6 @@ This library provides functionality for fetching and parsing information about C
 ```bash
 pip install cveutils
 ```
-## Requirements
-This library requires the requests module and the datetime module.
 ## Usage
 To use this library, simply import the CVE class and initialize an instance with a CVE ID as a string.
 
