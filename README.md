@@ -1,4 +1,6 @@
 # cveutils
+![logo](https://raw.githubusercontent.com/viniciuspereiras/cveutils/main/static/logo.png)
+
 [![PyPI](https://img.shields.io/pypi/v/cveutils?style=flat)](https://pypi.python.org/pypi/cveutils/)
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://choosealicense.com/licenses/mit/)
 
