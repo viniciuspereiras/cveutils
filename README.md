@@ -14,7 +14,7 @@ To use this library, simply import the CVE class and initialize an instance with
 
 ```python
 
-from cve import CVE
+from cveutils import CVE
 
 cve = CVE('CVE-2021-12345')
 ```
