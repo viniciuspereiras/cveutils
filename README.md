@@ -60,3 +60,9 @@ MITRE
 ['https://example.com/reference1', 'https://example.com/reference2']
 
 ```
+# To do
+- Change to v2 api version
+- Add more features https://nvd.nist.gov/developers/vulnerabilities
+- PEP8
+- Think if has some better way to not do the quest in the moment of object creation
+- Implement other api features
